@@ -1,0 +1,17 @@
+.j-back-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30rpx;
+    bottom: 200rpx;
+    border-radius: 50%;
+    background: #fff;
+    padding: 8rpx;
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
+}
+
+.j-back-home image {
+    width: 54rpx;
+    height: 54rpx;
+}

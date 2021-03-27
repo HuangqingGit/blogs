@@ -1,0 +1,30 @@
+{
+    "pages": ["pages/index/index", "pages/search/search", "pages/search-res/search-res", "pages/post/post", "pages/category/category"],
+    "tabBar": {
+        "color": "#606266",
+        "selectedColor": "#409EFF",
+        "backgroundColor": "#ffffff",
+        "position": "bottom",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "assets/img/index.png",
+                "selectedIconPath": "assets/img/index_active.png"
+            },
+            {
+                "pagePath": "pages/category/category",
+                "text": "分类",
+                "iconPath": "assets/img/cate.png",
+                "selectedIconPath": "assets/img/cate_active.png"
+            },
+            {
+                "pagePath": "pages/search/search",
+                "text": "搜索",
+                "iconPath": "assets/img/search.png",
+                "selectedIconPath": "assets/img/search_active.png"
+            }
+        ]
+    }
+}

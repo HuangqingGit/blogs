@@ -1,0 +1,86 @@
+{
+	"projectid": "1109713996_JoeQQ%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"nodeModules": true,
+		"uploadWithSourceMap": false,
+		"uglifyFileName": true,
+		"remoteDebugLogEnable": false,
+		"prefetch": false
+	},
+	"compileType": "miniprogram",
+	"createTime": 1606268534750,
+	"accessTime": 1606268534750,
+	"packOptions": {
+		"ignore": []
+	},
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"qqappid": "1109713996",
+	"projectname": "JoeQQ%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"scripts": {
+		"beforeCompile": "",
+		"beforePreview": "",
+		"beforeUpload": ""
+	},
+	"qqLibVersion": "1.20.0",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "搜索页",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": ""
+				},
+				{
+					"id": 1,
+					"name": "搜索结果",
+					"pathName": "pages/search-res/search-res",
+					"query": "val=vue",
+					"scene": ""
+				},
+				{
+					"id": 2,
+					"name": "文章详情",
+					"pathName": "pages/post/post",
+					"query": "cid=178",
+					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/category/category",
+					"query": "",
+					"scene": ""
+				}
+			]
+		}
+	}
+}

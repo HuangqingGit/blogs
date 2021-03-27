@@ -1,0 +1,144 @@
+page {
+	background: #fff;
+	padding-top: 118rpx;
+}
+
+.j-scroll {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	z-index: 99;
+	white-space: nowrap;
+	border-bottom: 2rpx solid #ebeef5;
+}
+.j-scroll .item {
+	display: inline-block;
+	margin: 0 24rpx;
+	height: 88rpx;
+	line-height: 88rpx;
+	color: #606266;
+}
+.j-scroll .item.active {
+	font-weight: 500;
+}
+.j-scroll .line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 6rpx;
+	border-radius: 3rpx;
+	background: #409eff;
+	transition: left 0.35s, width 0.35s;
+}
+
+.j-list {
+	margin: 0 30rpx;
+}
+.j-list .empty {
+    padding-top: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #c0c4cc;
+}
+.j-list .empty image {
+    width: 128rpx;
+    height: 128rpx;
+    margin-bottom: 20rpx;
+}
+.j-list .item {
+	display: flex;
+	border-bottom: 2rpx solid #ebeef5;
+	padding-bottom: 30rpx;
+	margin-bottom: 30rpx;
+}
+
+.j-list .item:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+.j-list .item image {
+	width: 220rpx;
+	height: 144rpx;
+	min-width: 220rpx;
+	min-height: 144rpx;
+	margin-left: 20rpx;
+	border-radius: 8rpx;
+}
+
+.j-list .item .info {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.j-list .item .info .title {
+	color: #606266;
+	font-size: 28rpx;
+	line-height: 1.5;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.j-list .item .info .meta {
+	display: flex;
+	align-items: center;
+}
+
+.j-list .item .info .meta view {
+	color: #909399;
+	margin-right: 30rpx;
+	font-size: 24rpx;
+}
+
+@keyframes image-loading-animation {
+	0% {
+		transform: scale(0.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.j-list .item.loading .image {
+	width: 220rpx;
+	height: 144rpx;
+	background: #ebebeb;
+	border-radius: 8rpx;
+	animation: image-loading-animation 0.5s infinite alternate;
+}
+@keyframes title-loading-animation {
+	0% {
+		width: 60%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+.j-list .item.loading .info .title {
+	height: 28rpx;
+	background: #ebebeb;
+	animation: title-loading-animation 0.5s infinite alternate;
+}
+@keyframes meta-loading-animation {
+	0% {
+		transform: scale(0.85);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.j-list .item.loading .info .meta view {
+    width: 25%;
+    height: 24rpx;
+    background: #ebebeb;
+    animation: meta-loading-animation 0.5s infinite alternate;
+}

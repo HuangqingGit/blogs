@@ -1,0 +1,387 @@
+page {
+    padding-top: 30rpx;
+    background: #fff;
+}
+
+/* 头部 */
+.j-header {
+    border-bottom: 1px solid #ebeef5;
+    padding: 0 30rpx;
+    padding-bottom: 30rpx;
+    margin-bottom: 30rpx;
+}
+.j-header .title {
+    font-size: 40rpx;
+    margin-bottom: 24rpx;
+    color: #303133;
+}
+.j-header .meta {
+    display: flex;
+    align-items: center;
+}
+.j-header .meta .item {
+    display: flex;
+    align-items: center;
+    margin-right: 30rpx;
+}
+.j-header .meta .item .icon {
+    width: 28rpx;
+    height: 28rpx;
+    margin-right: 10rpx;
+}
+.j-header .meta .item .text {
+    color: #909399;
+    font-size: 24rpx;
+}
+
+@keyframes header-title-loading {
+    0% {
+        width: 30%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+.j-header.loading .title {
+    height: 40rpx;
+    background: #ebebeb;
+    animation: header-title-loading 0.5s infinite alternate;
+}
+@keyframes header-meta-loading {
+    0% {
+        width: 50rpx;
+    }
+    100% {
+        width: 120rpx;
+    }
+}
+.j-header.loading .meta .item {
+    height: 28rpx;
+    background: #ebebeb;
+    animation: header-meta-loading 0.5s infinite alternate;
+}
+
+/* markdown */
+.j-markdown {
+    padding: 0 30rpx;
+    margin-bottom: 30rpx;
+}
+.j-markdown.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ebebeb;
+    font-size: 28rpx;
+    padding-top: 100rpx;
+}
+@keyframes markdown-loading-animation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.j-markdown.loading image {
+    width: 128rpx;
+    height: 128rpx;
+    animation: markdown-loading-animation 1s infinite;
+    margin-bottom: 30rpx;
+}
+
+/* 点赞 */
+.j-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.j-action .button {
+    display: flex;
+    align-items: center;
+    border: 2rpx solid #f56c6c;
+    color: #f56c6c;
+    font-size: 24rpx;
+    height: 60rpx;
+    border-radius: 30rpx;
+    padding: 0 30rpx;
+}
+.j-action .button image {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+}
+/* 评论 */
+.j-comment {
+    padding: 0 30rpx;
+}
+.j-comment .comments .item {
+    display: flex;
+}
+.j-comment .comments .item .avatar {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.j-comment .comments .item .content {
+    flex: 1;
+    min-width: 0;
+    border-bottom: 2rpx solid #ebeef5;
+    padding-bottom: 30rpx;
+    margin-bottom: 30rpx;
+}
+.j-comment .comments .item:last-child .content {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.j-comment .comments .item .content .name {
+    font-size: 14px;
+    color: #303133;
+    margin-bottom: 8rpx;
+    font-weight: 500;
+}
+.j-comment .comments .item .content .substance {
+    margin-bottom: 8px;
+}
+.j-comment .comments .item .content .substance .canvas {
+    font-size: 14px;
+    color: #409eff;
+}
+.j-comment .comments .item .content .substance .canvas image {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    vertical-align: -2.5px;
+}
+.j-comment .comments .item .content .substance .text {
+    font-size: 14px;
+    color: #303133;
+    line-height: 22px;
+    word-break: break-all;
+}
+
+.j-comment .comments .item .content .meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.j-comment .comments .item .content .meta .time {
+    color: #909399;
+    font-size: 12px;
+}
+
+.j-comment .comments .item .content .meta image {
+    width: 16px;
+    height: 16px;
+}
+.j-comment .comments .item .children {
+    background: #f2f6fc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+}
+.j-comment .comments .item .children .term {
+    line-height: 24px;
+    font-size: 14px;
+    color: #303133;
+}
+.j-comment .comments .item .children .term .term-name {
+    display: inline-block;
+    color: #409eff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.j-comment .comments .item .children .term .term-text {
+    display: inline-block;
+    font-size: 14px;
+    color: #303133;
+    word-break: break-all;
+}
+.j-comment .comments .item .children .term .term-canvas {
+    display: inline-block;
+    font-size: 14px;
+    color: #409eff;
+}
+.j-comment .comments .item .children .term .term-canvas image {
+    width: 14px;
+    height: 14px;
+    vertical-align: -2.5px;
+    margin-right: 5px;
+}
+
+@keyframes comments-avatar-animation {
+    0% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.j-comment .comments.loading .item .avatar {
+    background: #ebebeb;
+    animation: comments-avatar-animation 0.5s infinite alternate;
+}
+@keyframes comments-name-animation {
+    0% {
+        width: 20%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+.j-comment .comments.loading .item .content .name {
+    width: 50%;
+    height: 14px;
+    background: #ebebeb;
+    animation: comments-name-animation 0.5s infinite alternate;
+}
+@keyframes comments-text-animation {
+    0% {
+        width: 50%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+.j-comment .comments.loading .item .content .substance .text {
+    width: 80%;
+    height: 14px;
+    background: #ebebeb;
+    animation: comments-text-animation 0.5s infinite alternate;
+}
+@keyframes comments-time-animation {
+    0% {
+        width: 15px;
+    }
+    100% {
+        width: 30px;
+    }
+}
+.j-comment .comments.loading .item .content .meta .time {
+    width: 30px;
+    background: #ebebeb;
+    height: 12px;
+    animation: comments-time-animation 0.5s infinite alternate;
+}
+.term-reply {
+    display: inline-block;
+    font-size: 14px;
+    color: #303133;
+    margin: 0 5px;
+}
+
+.j-reply {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 2rpx solid #f2f6fc;
+    padding: 20rpx 30rpx 0;
+    z-index: 1;
+}
+.j-reply .input {
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 30rpx;
+    background: #f2f6fc;
+    font-size: 24rpx;
+    padding: 0 30rpx;
+    color: #c0c4cc;
+}
+
+.j-form-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(10rpx);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.35s, opacity 0.35s;
+    z-index: 25;
+}
+
+.j-form-mask.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 上方评论 */
+.j-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 30rpx;
+    z-index: 30;
+    transform: translate3d(0, -100%, 0);
+    transition: transform 0.35s;
+    z-index: 999;
+}
+.j-form.active {
+    visibility: visible;
+    transform: translate3d(0, -2rpx, 0);
+}
+.j-form .head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+.j-form .head input {
+    flex: 1;
+    height: 60rpx;
+    border-radius: 8rpx;
+    background: #f2f6fc;
+    font-size: 28rpx;
+    padding: 0 20rpx;
+    color: #606266;
+}
+.j-form .head input:first-child {
+    margin-right: 10rpx;
+}
+.j-form .head input:last-child {
+    margin-left: 10rpx;
+}
+.j-form textarea {
+    width: 100%;
+    height: 200rpx;
+    font-size: 28rpx;
+    color: #606266;
+    background: #f2f6fc;
+    border-radius: 8rpx;
+    padding: 8rpx 10rpx;
+    line-height: 1.5;
+    margin-bottom: 20rpx;
+}
+.j-form .textarea-placeholder {
+    font-size: 28rpx;
+    color: #c0c4cc;
+}
+.j-form .input-placeholder {
+    font-size: 28rpx;
+    color: #c0c4cc;
+}
+.j-form .footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.j-form .footer .button {
+    height: 60rpx;
+    line-height: 60rpx;
+    background: #ecf5ff;
+    color: #409eff;
+    font-size: 28rpx;
+    padding: 0 30rpx;
+    border-radius: 8rpx;
+}

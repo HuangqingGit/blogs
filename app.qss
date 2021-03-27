@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    font-size: 28rpx;
+}
+
+text {
+    color: #303133;
+}
+
+view {
+    color: #303133;
+}
+
+input {
+    color: #303133;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+image {
+    vertical-align: middle;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 20px -5px rgba(158, 158, 158, 0.22);
+}

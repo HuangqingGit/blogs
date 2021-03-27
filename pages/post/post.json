@@ -1,0 +1,11 @@
+{
+    "navigationBarTitleText": "详情",
+    "navigationStyle": "default",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "wemark": "../../wemark/wemark",
+        "backhome": "../../component/back-home/back-home"
+    }
+}
